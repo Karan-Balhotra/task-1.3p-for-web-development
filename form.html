@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles1.css">
+  <title>Form Page</title>
+  <script src="https://unpkg.com/vue@3.2.20/dist/vue.global.js"></script>
+</head>
+<body>
+
+    <div class="header">
+     <h1 style="background-color: yellowgreen;">Contact Form</h1>
+    </div>
+  <div id="app">
+    <form @submit.prevent="submitForm">
+      <label for="name">Name:</label>
+      <input id="name" v-model="formData.name" required placeholder="enter your name">
+      <br>
+      <br>
+
+      <label for="email">Email:</label>
+      <input id="email" v-model="formData.email" type="email" required placeholder="enter your e-mail">
+
+      <br>
+      <br>
+      <label for="message">Message:</label>
+      <textarea id="message" v-model="formData.message" rows="4" required placeholder="drop a message for me"></textarea>
+
+      <br>
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>

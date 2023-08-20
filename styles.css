@@ -1,0 +1,100 @@
+body{
+  background-color: aqua;
+}
+
+.header{
+  text-align: center;
+  font-family: 'Tilt Prism', cursive;
+}
+
+.intro h2{
+  font-family: 'Pacifico', cursive;
+}
+
+
+.intro {
+    padding: 20px;
+    text-align: center;
+    background-color:cornflowerblue;
+    border-radius: 5px;
+  }
+  
+  .skills {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skill {
+    background-color:rebeccapurple;
+    color:rgb(152, 211, 152);
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 3px;
+  }
+  
+  .project {
+    border: 1px solid papayawhip;
+    padding: 20px;
+    margin: 10px;
+    background-color:cornflowerblue;
+    border-radius: 5px;
+  }
+  
+  .project h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: 'Pacifico', cursive;
+  }
+  
+  .contact {
+    margin-top: 20px;
+    text-align: center;
+    background-color:cornflowerblue;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .contact p {
+    margin: 10px 0;
+  }
+  
+  .contact a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .contact a:hover {
+    color: #007bff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .project button {
+    background-color:lightgreen;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+  }
+
+  .project button:hover{
+    background-color: #4CAF50; 
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+    .project {
+      padding: 10px;
+      margin: 5px;
+    }
+  }
